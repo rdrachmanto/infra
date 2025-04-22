@@ -1,6 +1,6 @@
 { pkgs, lib, ... }:
 {
-  home.packages = with pkgs; [
+  environment.systemPackages = with pkgs; [
     fzf
     ripgrep
     yazi
@@ -10,6 +10,10 @@
     bat
     starship
     glances
+    wget
+    curl
+    lshw
+    tmux
   ];
 }
 
