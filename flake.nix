@@ -13,5 +13,11 @@
         ./hosts/homeserver/configuration.nix
       ];
     };
+    nixosConfigurations."thinkpad" = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      modules = [
+        ./hosts/thinkpad/configuration.nix
+      ];
+    };
   };
 }

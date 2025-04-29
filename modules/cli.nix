@@ -4,6 +4,7 @@
     fzf
     ripgrep
     yazi
+    ueberzugpp
     fd
     eza
     stow
@@ -14,6 +15,8 @@
     curl
     lshw
     tmux
+    nmap
+    fastfetch
   ];
 }
 
