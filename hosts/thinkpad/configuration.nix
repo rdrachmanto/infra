@@ -13,7 +13,7 @@
       ./../../modules/nvidia.nix
       ./../../modules/programs.nix
       ./../../modules/nerd-fonts.nix
-      ./../../modules/hyprland.nix
+      ./../../modules/kde.nix
       ./services.nix
     ];
 
@@ -21,7 +21,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "RD-P14SG5"; # Define your hostname.
+  networking.hostName = "rd-p14sg5"; # Define your hostname.
   networking.networkmanager.enable = true;
 
   # Set your time zone.

@@ -16,6 +16,22 @@
   # Enable flatpak
   services.flatpak.enable = true;
 
-  # Blueman
-  services.blueman.enable = true;
+  # Avahi
+  services.avahi = {
+    enable = true;
+    nssmdns4 = true;
+    openFirewall = true;
+  };
+
+  # Postgres  -- Probably we can move this somewhere
+  services.postgresql = {
+    enable = true;
+    package = pkgs.postgresql_15;
+    authentication = ''
+      local all postgres             peer
+      local all all                  md5
+      host  all all      12.0.0.1/32 md5
+      host  all all      ::1/128     md5
+    '';
+  };
 }
