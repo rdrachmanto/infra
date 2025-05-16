@@ -8,6 +8,9 @@
     discord
     thunderbird
     libtiff
+    zotero
+    zoom-us
+    brave
   ];
 }
 

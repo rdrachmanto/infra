@@ -17,6 +17,7 @@
     pkgs.kdePackages.dolphin
     pkgs.bluetui
     pkgs.sioyek
+    pkgs.zathura
     pkgs.swayimg
   ];
 

@@ -17,6 +17,7 @@
     tmux
     nmap
     fastfetch
+    bind
   ];
 }
 
