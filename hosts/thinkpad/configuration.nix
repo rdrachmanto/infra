@@ -12,8 +12,9 @@
       ./../../modules/devtools.nix
       ./../../modules/nvidia.nix
       ./../../modules/programs.nix
+      ./../../modules/virtualisation.nix
       ./../../modules/nerd-fonts.nix
-      ./../../modules/kde.nix
+      ./../../modules/gnome.nix
       ./services.nix
     ];
 
@@ -23,6 +24,7 @@
 
   networking.hostName = "rd-p14sg5"; # Define your hostname.
   networking.networkmanager.enable = true;
+  networking.firewall.allowedTCPPorts = [ 5432 ];
 
   # Set your time zone.
   time.timeZone = "America/New_York";
