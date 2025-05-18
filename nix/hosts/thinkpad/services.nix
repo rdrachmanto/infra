@@ -35,8 +35,6 @@
       local all all                     md5
       host  all all      127.0.0.1/32   md5
       host  all all      ::1/128        md5
-      host  all all      169.254.1.0/24 md5
-      host  all all      192.168.1.0/24 md5
     '';
   };
 }

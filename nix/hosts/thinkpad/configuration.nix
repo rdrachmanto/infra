@@ -10,11 +10,11 @@
       ./hardware-configuration.nix
       ./../../modules/cli.nix
       ./../../modules/devtools.nix
-      ./../../modules/nvidia.nix
+      ./../../modules/hardware/nvidia.nix
       ./../../modules/programs.nix
-      ./../../modules/virtualisation.nix
+      ./../../modules/services/virtualisation.nix
       ./../../modules/nerd-fonts.nix
-      ./../../modules/gnome.nix
+      ./../../modules/desktop/gnome.nix
       ./services.nix
     ];
 
@@ -24,7 +24,7 @@
 
   networking.hostName = "rd-p14sg5"; # Define your hostname.
   networking.networkmanager.enable = true;
-  networking.firewall.allowedTCPPorts = [ 5432 ];
+  networking.firewall.allowedTCPPorts = [];
 
   # Set your time zone.
   time.timeZone = "America/New_York";
@@ -64,6 +64,7 @@
 
   environment.systemPackages = with pkgs; [
     # Everything inside the modules
+    home-manager
   ];
 
   system.stateVersion = "24.11"; # Did you read the comment?
