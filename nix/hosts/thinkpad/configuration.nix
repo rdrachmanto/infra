@@ -8,13 +8,10 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./../../modules/cli.nix
-      ./../../modules/devtools.nix
       ./../../modules/hardware/nvidia.nix
-      ./../../modules/programs.nix
       ./../../modules/services/virtualisation.nix
-      ./../../modules/nerd-fonts.nix
       ./../../modules/desktop/gnome.nix
+      ./../../modules/defaults.nix
       ./services.nix
     ];
 
@@ -62,10 +59,7 @@
     experimental-features = nix-command flakes
   '';
 
-  environment.systemPackages = with pkgs; [
-    # Everything inside the modules
-    home-manager
-  ];
+  environment.systemPackages = with pkgs; [];
 
   system.stateVersion = "24.11"; # Did you read the comment?
 

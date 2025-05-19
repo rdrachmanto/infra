@@ -8,10 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./../../modules/cli.nix
-      ./../../modules/devtools.nix
-      ./../../modules/nvidia.nix
-      # ./../../modules/gnome.nix
+      ./../../modules/defaults.nix
+      ./../../modules/services/virtualisation.nix
       ./services.nix
     ];
 
