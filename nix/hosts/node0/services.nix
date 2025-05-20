@@ -22,8 +22,8 @@
         "path" = "/srv/Public";
         "browseable" = "yes";
         "read only" = "no";
-        "write list" = ["rdrachmanto"];
-        "valid users" = ["rdrachmanto"];
+        "write list" = ["srv"];
+        "valid users" = ["srv"];
         "guest ok" = "yes";
         "create mask" = "0664";
         "directory mask" = "0755";

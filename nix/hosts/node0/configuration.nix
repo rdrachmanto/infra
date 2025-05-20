@@ -17,7 +17,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "rd-node0"; # Define your hostname.
 
   # Enable networking
   networking.networkmanager.enable = true;
@@ -49,9 +49,9 @@
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.rdrachmanto = {
+  users.users.srv = {
     isNormalUser = true;
-    description = "Rakandhiya Daanii Rachmanto";
+    description = "rd-node0";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
