@@ -7,10 +7,10 @@
 
   outputs = { self, nixpkgs, home-manager }@inputs:
   {
-    nixosConfigurations."homeserver" = nixpkgs.lib.nixosSystem {
+    nixosConfigurations."node0" = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ./hosts/homeserver/configuration.nix
+        ./hosts/node0/configuration.nix
       ];
     };
     nixosConfigurations."thinkpad" = nixpkgs.lib.nixosSystem {
